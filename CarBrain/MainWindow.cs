@@ -1,5 +1,6 @@
 ﻿using System;
 using Gtk;
+using CarBrain;
 
 public partial class MainWindow: Gtk.Window
 {
@@ -10,6 +11,8 @@ public partial class MainWindow: Gtk.Window
 
 	protected void OnDeleteEvent (object sender, DeleteEventArgs a)
 	{
+		Startup.KillAll ();
+
 		Application.Quit ();
 		a.RetVal = true;
 	}
