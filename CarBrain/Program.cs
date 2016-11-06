@@ -3,7 +3,7 @@ using Gtk;
 
 namespace CarBrain
 {
-	class MainClass
+	class Program
 	{
 		public static void Main (string[] args)
 		{
