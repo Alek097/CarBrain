@@ -1,4 +1,5 @@
 ﻿using System;
+using CarBrain.System.Settings;
 using Gtk;
 
 namespace CarBrain
@@ -8,6 +9,9 @@ namespace CarBrain
 		public static void Main (string[] args)
 		{
 			Application.Init ();
+
+			RegisterServicesAndSettings ();
+
 			MainWindow win = new MainWindow ();
 			win.Fullscreen ();
 			Application.Run ();
@@ -16,7 +20,7 @@ namespace CarBrain
 		private static void RegisterServicesAndSettings()
 		{
 			Startup.RegisterSetting (
-
+				new StartMongoDB("111111")
 			);
 
 			Startup.RegisterServices (
