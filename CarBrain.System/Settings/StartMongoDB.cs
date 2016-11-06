@@ -18,7 +18,7 @@ namespace CarBrain.System.Settings
 				UseShellExecute = false,
 				RedirectStandardOutput = true,
 				Arguments = string.Format("-c \"echo {0} | sudo -S service mongod start\"")
-			};
+			});
 		}
 	}
 }
