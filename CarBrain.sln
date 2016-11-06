@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarBrain", "CarBrain\CarBrain.csproj", "{3DA32715-8D88-42A7-A7EB-F7E20513E443}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarBrain.System", "CarBrain.System\CarBrain.System.csproj", "{864E7C37-AC4B-441E-87A2-4807FCEBCF2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,5 +15,9 @@ Global
 		{3DA32715-8D88-42A7-A7EB-F7E20513E443}.Debug|x86.Build.0 = Debug|x86
 		{3DA32715-8D88-42A7-A7EB-F7E20513E443}.Release|x86.ActiveCfg = Release|x86
 		{3DA32715-8D88-42A7-A7EB-F7E20513E443}.Release|x86.Build.0 = Release|x86
+		{864E7C37-AC4B-441E-87A2-4807FCEBCF2A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{864E7C37-AC4B-441E-87A2-4807FCEBCF2A}.Debug|x86.Build.0 = Debug|Any CPU
+		{864E7C37-AC4B-441E-87A2-4807FCEBCF2A}.Release|x86.ActiveCfg = Release|Any CPU
+		{864E7C37-AC4B-441E-87A2-4807FCEBCF2A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
