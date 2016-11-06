@@ -12,5 +12,16 @@ namespace CarBrain
 			win.Fullscreen ();
 			Application.Run ();
 		}
+
+		private static void RegisterServicesAndSettings()
+		{
+			Startup.RegisterSetting (
+
+			);
+
+			Startup.RegisterServices (
+
+			);
+		}
 	}
 }
