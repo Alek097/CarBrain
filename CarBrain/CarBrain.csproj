@@ -68,6 +68,13 @@
     <Compile Include="gtk-gui\MainWindow.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\CarBrain.System\CarBrain.System.csproj">
+      <Project>{864E7C37-AC4B-441E-87A2-4807FCEBCF2A}</Project>
+      <Name>CarBrain.System</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
