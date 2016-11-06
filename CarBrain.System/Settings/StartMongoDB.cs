@@ -17,9 +17,18 @@ namespace CarBrain.System.Settings
 				FileName = "/bin/bash",
 				UseShellExecute = false,
 				RedirectStandardOutput = true,
-				Arguments = string.Format("-c \"echo {0} | sudo -S service mongod start\"")
+				Arguments = string.Format("-c \"echo {0} | sudo -S service mongod start\"", this.password)
 			});
 		}
+		public void Kill ()
+		{
+			Process.Start (new ProcessStartInfo () {
+				FileName = "/bin/bash",
+				UseShellExecute = false,
+				RedirectStandardOutput = true,
+				Arguments = string.Format("-c \"echo {0} | sudo -S service mongod stop\"", this.password)
+			});
+		}	
 	}
 }
 
