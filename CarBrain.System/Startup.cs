@@ -33,6 +33,7 @@ namespace CarBrain.System
 		public static void KillAll()
 		{
 			_settings.ForEach (setting => setting.Kill ());
+			_services.ForEach (service => service.Kill ());
 		}
 	}
 }
