@@ -8,7 +8,7 @@ namespace CarBrain.System
 	public static class Startup
 	{
 		private static List<ISetting> _settings;
-		private static List<IService> _services;
+		private static List<Service> _services;
 
 		public static void RegisterSetting(params ISetting[] settings)
 		{
@@ -22,25 +22,17 @@ namespace CarBrain.System
 
 		public static void RegisterServices(params IService[] services)
 		{
-			_services = new List<IService> (services);
+			_services = new List<Service> ();
 
-			foreach (IService service in services)
+			foreach (IService item in services) 
 			{
-				Task.Run (() => {
-					bool isNext = true;
-
-					while(isNext)
-					{
-						isNext = service.Loop();
-					}
-				});
+				_services.Add (new Service (item));
 			}
 		}
 
 		public static void KillAll()
 		{
 			_settings.ForEach (setting => setting.Kill ());
-			_services.ForEach (service => service.Kill ());
 		}
 	}
 }
