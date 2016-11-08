@@ -1,6 +1,6 @@
 ﻿using System;
 using Gtk;
-using CarBrain;
+using CarBrain.System;
 
 public partial class MainWindow: Gtk.Window
 {

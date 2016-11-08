@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
-using CarBrain.System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CarBrain
+namespace CarBrain.System
 {
 	public static class Startup
 	{

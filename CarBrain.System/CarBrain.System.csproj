@@ -35,6 +35,8 @@
     <Compile Include="ISetting.cs" />
     <Compile Include="IService.cs" />
     <Compile Include="Settings\StartMongoDB.cs" />
+    <Compile Include="Startup.cs" />
+    <Compile Include="Service.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
