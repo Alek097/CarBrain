@@ -37,9 +37,15 @@
     <Compile Include="Settings\StartMongoDB.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Service.cs" />
+    <Compile Include="Models\Icon.cs" />
+    <Compile Include="Models\Screen.cs" />
+    <Compile Include="Models\SystemInformation.cs" />
+    <Compile Include="Models\Position.cs" />
+    <Compile Include="Global.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Settings\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 </Project>
