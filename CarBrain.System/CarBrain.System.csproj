@@ -46,6 +46,7 @@
     <Compile Include="Models\Position.cs" />
     <Compile Include="Global.cs" />
     <Compile Include="Settings\SetSystemInformation.cs" />
+    <Compile Include="Models\UserSettings.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
