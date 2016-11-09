@@ -49,4 +49,10 @@
     <Folder Include="Settings\" />
     <Folder Include="Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CarBrain.Data\CarBrain.Data.csproj">
+      <Project>{79F9F10B-C3F0-4715-A0A0-262622756AB7}</Project>
+      <Name>CarBrain.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
