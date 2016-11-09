@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using System.Linq;
 using MongoDB.Bson;
 using MongoDB.Driver;
 
@@ -95,10 +96,9 @@ namespace CarBrain.Data
 		{
 			MongoServer server = new MongoClient (connectionString).GetServer ();
 
-			List<string> dataBases = server.GetDatabaseNames () as List<string>;
+			IEnumerable<string> dataBases = server.GetDatabaseNames ();
 
-
-			return dataBases.Contains(dbName);
+			return dataBases.Contains (dbName);
 		}
 	}
 }

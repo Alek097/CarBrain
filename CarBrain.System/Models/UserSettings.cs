@@ -4,7 +4,7 @@ using MongoDB.Bson;
 
 namespace CarBrain.System.Models
 {
-	internal class UserSettings
+	public class UserSettings
 	{
 		public ObjectId Id { get; set; }
 		public byte[] Background { get; set; }
