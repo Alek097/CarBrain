@@ -8,13 +8,13 @@ using MongoDB.Driver;
 namespace CarBrain.Data
 {
 	public class DataBase<TModel>
-		where TModel : new()
 	{
 		private IMongoCollection<TModel> collection { get; set; }
+		private const string connectionString = "mongodb://localhost:27017";
 
 		public DataBase (string dbName, string collectionName)
 		{
-			MongoClient client = new MongoClient ("mongodb://localhost:27017");
+			MongoClient client = new MongoClient (connectionString);
 			this.collection = client.GetDatabase (dbName).GetCollection<TModel>(collectionName);
 		}
 		#region insert
@@ -90,6 +90,16 @@ namespace CarBrain.Data
 			await this.collection.DeleteOneAsync (filter);
 		}
 		#endregion
+
+		public static bool Exsist(string dbName)
+		{
+			MongoServer server = new MongoClient (connectionString).GetServer ();
+
+			List<string> dataBases = server.GetDatabaseNames () as List<string>;
+
+
+			return dataBases.Contains(dbName);
+		}
 	}
 }
 
