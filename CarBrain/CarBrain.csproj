@@ -75,6 +75,10 @@
       <Project>{864E7C37-AC4B-441E-87A2-4807FCEBCF2A}</Project>
       <Name>CarBrain.System</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CarBrain.Data\CarBrain.Data.csproj">
+      <Project>{79F9F10B-C3F0-4715-A0A0-262622756AB7}</Project>
+      <Name>CarBrain.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="images\" />
