@@ -6,9 +6,12 @@ namespace CarBrain.System.Settings
 	{
 		public void Start ()
 		{
-
+			
 		}
-		public void Kill () { }
+		public void Kill () 
+		{
+			
+		}
 	}
 }
 
