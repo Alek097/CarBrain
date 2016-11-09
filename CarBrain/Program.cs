@@ -21,7 +21,8 @@ namespace CarBrain
 		private static void RegisterServicesAndSettings()
 		{
 			Startup.RegisterSetting (
-				new StartMongoDB("111111")
+				new StartMongoDB("111111"),
+				new SetSystemInformation()
 			);
 
 			Startup.RegisterServices (
