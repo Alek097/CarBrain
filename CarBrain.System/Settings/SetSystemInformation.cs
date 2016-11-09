@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Collections.Generic;
 using CarBrain.Data;
 using CarBrain.System.Models;
@@ -9,6 +10,13 @@ namespace CarBrain.System.Settings
 {
 	public class SetSystemInformation : ISetting
 	{
+		private readonly Assembly assembly;
+
+		public SetSystemInformation (Assembly assembly)
+		{
+			this.assembly = assembly;
+		}
+
 		public void Start ()
 		{
 			if (!DataBase<UserSettings>.Exsist ("CarBrain")) 
@@ -39,7 +47,7 @@ namespace CarBrain.System.Settings
 
 			UserSettings _settings = collection.First((usrsetting) => true);
 
-			Global.SystemInformation = new SystemInformation () {
+			Global.SystemInformation = new SystemInformation (this.assembly) {
 				Screen = new Screen () {
 					Background = _settings.Background,
 					Icons = _settings.Icons

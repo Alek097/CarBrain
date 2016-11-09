@@ -12,11 +12,10 @@ namespace CarBrain.System.Models
 
 		public string Version { get; private set; }
 
-		internal SystemInformation() 
+		internal SystemInformation(Assembly assembly) 
 		{
 			this.OS = Environment.OSVersion.ToString ();
 
-			Assembly assembly = Assembly.GetExecutingAssembly();
 			this.Version = FileVersionInfo.GetVersionInfo(assembly.Location).FileVersion;
 		}
 	}

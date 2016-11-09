@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using CarBrain.System.Settings;
 using Gtk;
 using CarBrain.System;
@@ -22,7 +23,7 @@ namespace CarBrain
 		{
 			Startup.RegisterSetting (
 				new StartMongoDB("111111"),
-				new SetSystemInformation()
+				new SetSystemInformation(Assembly.GetEntryAssembly())
 			);
 
 			Startup.RegisterServices (
