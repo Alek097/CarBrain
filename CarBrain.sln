@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarBrain.System", "CarBrain
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarBrain.Data", "CarBrain.Data\CarBrain.Data.csproj", "{79F9F10B-C3F0-4715-A0A0-262622756AB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lizard", "Lizard\Lizard.csproj", "{AF7CCCB0-AE39-4110-B61D-1F28592C0CBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -25,5 +27,9 @@ Global
 		{864E7C37-AC4B-441E-87A2-4807FCEBCF2A}.Debug|x86.Build.0 = Debug|Any CPU
 		{864E7C37-AC4B-441E-87A2-4807FCEBCF2A}.Release|x86.ActiveCfg = Release|Any CPU
 		{864E7C37-AC4B-441E-87A2-4807FCEBCF2A}.Release|x86.Build.0 = Release|Any CPU
+		{AF7CCCB0-AE39-4110-B61D-1F28592C0CBC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AF7CCCB0-AE39-4110-B61D-1F28592C0CBC}.Debug|x86.Build.0 = Debug|Any CPU
+		{AF7CCCB0-AE39-4110-B61D-1F28592C0CBC}.Release|x86.ActiveCfg = Release|Any CPU
+		{AF7CCCB0-AE39-4110-B61D-1F28592C0CBC}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
