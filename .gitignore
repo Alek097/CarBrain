@@ -33,3 +33,4 @@ CarBrain/packages
 *.obj
 *.user
 *.userprefs
+/packages
