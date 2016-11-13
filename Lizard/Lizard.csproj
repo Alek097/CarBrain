@@ -29,11 +29,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Reales\Command.cs" />
     <Compile Include="Model\Reales\CommandType.cs" />
+    <Compile Include="Model\Reales\CreateVariableCommand.cs" />
+    <Compile Include="Model\Reales\LizardType.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
