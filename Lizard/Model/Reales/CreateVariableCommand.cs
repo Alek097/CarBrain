@@ -7,31 +7,32 @@ namespace Lizard.Model.Reales
 	{
 		public string Name { get; set; }
 		public TValue Value { get; set; }
-		public LizardType Type { get; set; }
+		public LizardType ValueType { get; set; }
 
-		public CreateVariableCommand (string Name, TValue value)
+		internal CreateVariableCommand (string Name, TValue value)
 			:base(CommandType.CreateVariable)
 		{
 			this.Name = Name;
 			this.Value = value;
+			base.Type = this.GetType ().ToString ();
 
 			Type valueType = typeof(TValue);
 
 			if (valueType == typeof(BigInteger)) 
 			{
-				this.Type = LizardType.Numeric;
+				this.ValueType = LizardType.Numeric;
 			} 
 			else if (valueType == typeof(string)) 
 			{
-				this.Type = LizardType.String;
+				this.ValueType = LizardType.String;
 			} 
 			else if (valueType == typeof(bool)) 
 			{
-				this.Type = LizardType.Boolean;
+				this.ValueType = LizardType.Boolean;
 			} 
 			else 
 			{
-				this.Type = LizardType.Custom;
+				this.ValueType = LizardType.Custom;
 			}
 		}
 

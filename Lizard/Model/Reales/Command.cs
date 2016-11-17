@@ -5,10 +5,11 @@ namespace Lizard.Model.Reales
 	public class Command
 	{
 		public CommandType CommandType { get; set; }
+		public string Type { get; set; }
 
-		public Command (CommandType type)
+		internal Command (CommandType commandType)
 		{
-			this.CommandType = type;
+			this.CommandType = commandType;
 		}
 
 		public Command () { }
