@@ -37,6 +37,10 @@
     <Compile Include="Model\Reales\CommandType.cs" />
     <Compile Include="Model\Reales\CreateVariableCommand.cs" />
     <Compile Include="Model\Reales\LizardType.cs" />
+    <Compile Include="Parser\Parser.cs" />
+    <Compile Include="Interpreter\IInterpreter.cs" />
+    <Compile Include="Model\Debug\CommandDebug.cs" />
+    <Compile Include="Model\Information.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
