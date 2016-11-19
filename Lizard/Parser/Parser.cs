@@ -5,7 +5,7 @@ namespace Lizard.Parser
 {
 	public sealed class Parser
 	{
-		private readonly string[] bannedSymbol = new string[] {
+		private readonly string[] bannedWords = new string[] {
 			"var",
 			"goto",
 			"method",

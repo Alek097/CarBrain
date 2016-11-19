@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Lizard.Debug;
+using Lizard.Model.Debug;
 
 namespace Lizard.Interpreter
 {

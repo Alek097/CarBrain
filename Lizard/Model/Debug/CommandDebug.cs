@@ -1,6 +1,6 @@
 ﻿using System;
 using Lizard.Model;
-using Lizard.Model.Reales;
+using Lizard.Model.Release;
 
 namespace Lizard.Model.Debug
 {
