@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Numerics;
 
-namespace Lizard.Model.Reales
+namespace Lizard.Model.Release
 {
 	public class CreateVariableCommand<TValue> : Command
 	{

@@ -33,16 +33,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Model\Reales\Command.cs" />
-    <Compile Include="Model\Reales\CommandType.cs" />
-    <Compile Include="Model\Reales\CreateVariableCommand.cs" />
-    <Compile Include="Model\Reales\LizardType.cs" />
     <Compile Include="Parser\Parser.cs" />
     <Compile Include="Interpreter\IInterpreter.cs" />
     <Compile Include="Model\Debug\CommandDebug.cs" />
     <Compile Include="Model\Information.cs" />
     <Compile Include="Model\Application.cs" />
     <Compile Include="Interpreter\InterpreterVersion.cs" />
+    <Compile Include="Model\Release\Command.cs" />
+    <Compile Include="Model\Release\CommandType.cs" />
+    <Compile Include="Model\Release\CreateVariableCommand.cs" />
+    <Compile Include="Model\Release\LizardType.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -50,6 +50,6 @@
     <Folder Include="Interpreter\" />
     <Folder Include="Model\" />
     <Folder Include="Model\Debug\" />
-    <Folder Include="Model\Reales\" />
+    <Folder Include="Model\Release\" />
   </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lizard.Model.Reales
+namespace Lizard.Model.Release
 {
 	public enum LizardType
 	{
