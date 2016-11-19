@@ -7,7 +7,17 @@ namespace Lizard.Parser
 	{
 		private readonly string[] bannedSymbol = new string[] {
 			"var",
-			"goto"
+			"goto",
+			"method",
+			"class",
+			"enum",
+			"if",
+			"else",
+			"interface",
+			"public",
+			"private",
+			"internal",
+			"protected"
 		};
 		
 		private Parser () { }
@@ -16,9 +26,6 @@ namespace Lizard.Parser
 
 		public static Parser FromText(string text, IInterpreter interpreter)
 		{
-
-
-
 			string code = text
 				.Replace ("\n", string.Empty)
 				.Replace("\t", string.Empty);
