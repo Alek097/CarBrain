@@ -41,6 +41,8 @@
     <Compile Include="Interpreter\IInterpreter.cs" />
     <Compile Include="Model\Debug\CommandDebug.cs" />
     <Compile Include="Model\Information.cs" />
+    <Compile Include="Model\Application.cs" />
+    <Compile Include="Interpreter\InterpreterVersion.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
