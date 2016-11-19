@@ -26,8 +26,6 @@ CarBrain/packages
 /xamarin-gtk-theme.pc
 *\obj
 *\bin
-*\Debug
-*\Release
 *.suo
 *.sdf
 *.obj
